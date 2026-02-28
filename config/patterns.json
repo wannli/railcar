@@ -1,0 +1,16 @@
+{
+  "patterns": [
+    {
+      "id": "ga-res-80",
+      "pattern": "A/RES/80/{X}",
+      "start": 1,
+      "description": "General Assembly Resolutions, 80th session",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "max_consecutive_misses": 3,
+    "request_delay_seconds": 2,
+    "language": "EN"
+  }
+}
