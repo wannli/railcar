@@ -5,8 +5,8 @@ title: "Report of the International Criminal Court :"
 date: "2025-11-12"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093218/files/A_RES_80_6-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/6
@@ -119,22 +119,22 @@ Stressing the importance that the Rome Statute accords to the rights and needs o
 
 ---
 
-1 United Nations, Treaty Series, vol. 2187, No. 38544.
+[^1]: United Nations, Treaty Series, vol. 2187, No. 38544.
 
-2 A/58/874 and A/58/874/Add.1.
+[^2]: A/58/874 and A/58/874/Add.1.
 
-3 Articles 10 and 13 of the Relationship Agreement.
+[^3]: Articles 10 and 13 of the Relationship Agreement.
 
-4 A/80/342.
+[^4]: A/80/342.
 
-5 United Nations, Treaty Series, vol. 2271, No. 40446.
+[^5]: United Nations, Treaty Series, vol. 2271, No. 40446.
 
-6 Article 2, paragraph 3, of the Relationship Agreement.
+[^6]: Article 2, paragraph 3, of the Relationship Agreement.
 
-7 A/67/828-S/2013/210, annex.
+[^7]: A/67/828-S/2013/210, annex.
 
-8 A/80/344.
+[^8]: A/80/344.
 
-9 S/PRST/2013/2; see Resolutions and Decisions of the Security Council, 1 August 2012–31 July 2013 (S/INF/68).
+[^9]: S/PRST/2013/2; see Resolutions and Decisions of the Security Council, 1 August 2012–31 July 2013 (S/INF/68).
 
-10 Official Records of the General Assembly, Eightieth Session, Supplement No. 1 (A/80/1).
+[^10]: Official Records of the General Assembly, Eightieth Session, Supplement No. 1 (A/80/1).

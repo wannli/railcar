@@ -5,8 +5,8 @@ title: "Participation by the State of Palestine during the 80th session :"
 date: "2025-09-19"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4089279/files/A_RES_80_1-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/1
@@ -23,7 +23,7 @@ Resolution adopted by the General Assembly on 19 September 2025
 
 The General Assembly,
 
-Expressing concern regarding situations in which representatives referred to in section 11 of the Agreement between the United Nations and the United States of America regarding the Headquarters of the United Nations1 are prevented from participating in the meetings of the General Assembly,
+Expressing concern regarding situations in which representatives referred to in section 11 of the Agreement between the United Nations and the United States of America regarding the Headquarters of the United Nations[^1] are prevented from participating in the meetings of the General Assembly,
 
 Regretting, in this regard, the decision of the United States of America to deny visas to and revoke visas from representatives of the State of Palestine ahead of the eightieth session of the General Assembly, thus preventing them from participating in the meetings of the United Nations, and seeking the immediate reversal of this decision,
 
@@ -49,4 +49,4 @@ Recalling also the Headquarters Agreement,
 
 ---
 
-1 See resolution 169 (II).
+[^1]: See resolution 169 (II).

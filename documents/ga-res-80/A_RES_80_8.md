@@ -5,8 +5,8 @@ title: "Building a peaceful and better world through sport and the Olympic ideal
 date: "2025-11-20"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093934/files/A_RES_80_8-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/8
@@ -115,14 +115,14 @@ the sub-item before the Games of the XXXIV Olympiad and the XVIII Paralympic Gam
 
 ---
 
-1 Resolution 60/1.
+[^1]: Resolution 60/1.
 
-2 Resolution 55/2.
+[^2]: Resolution 55/2.
 
-3 Resolution 70/1.
+[^3]: Resolution 70/1.
 
-4 United Nations, Treaty Series, vol. 1577, No. 27531.
+[^4]: United Nations, Treaty Series, vol. 1577, No. 27531.
 
-5 Resolution S-27/2, annex.
+[^5]: Resolution S-27/2, annex.
 
-6 United Nations, Treaty Series, vol. 2515, No. 44910.
+[^6]: United Nations, Treaty Series, vol. 2515, No. 44910.

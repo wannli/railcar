@@ -5,8 +5,8 @@ title: "Doha Political Declaration of the \"World Social Summit\" under the titl
 date: "2025-11-04"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093123/files/A_RES_80_5-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/5
@@ -37,7 +37,7 @@ Doha Political Declaration of the “World Social Summit” under the title “t
 5. We meet 30 years after the first World Summit for Social Development and days after the commemoration of the eightieth anniversary of the United Nations, with a determination to promote social development and social justice anchored in a strengthened and effective multilateral system, and we reaffirm and remain guided by the purposes and principles of the Charter of the United Nations and international law.
 6. We recommit to the Copenhagen Declaration and Programme of Action, as they remain relevant and valid, and the further initiatives for social development adopted by the General Assembly, including at its twenty-fourth special session,3 and to a continued global dialogue on social development issues.
 7. We reaffirm the full, timely and effective implementation of the 2030 Agenda and the realization of the Sustainable Development Goals, upholding all the principles enshrined in it, including the promise to leave no one behind and reach the furthest behind first, and to place people at the centre of development, with due consideration of the needs of present and future generations, and a strong commitment to safeguarding our planet.
-8. We also reaffirm the intergovernmental commitments related to social development, including those in the political declarations of the Sustainable Development Goals Summits held in 2019 and 2023, 4  as well as the relevant commitments in the Pact for the Future and its annexes.5 9. We reaffirm the Addis Ababa Action Agenda of the Third International Conference on Financing for Development6 as an integral part of the 2030 Agenda.
+8. We also reaffirm the intergovernmental commitments related to social development, including those in the political declarations of the Sustainable Development Goals Summits held in 2019 and 2023, 4  as well as the relevant commitments in the Pact for the Future and its annexes.5 9. We reaffirm the Addis Ababa Action Agenda of the Third International Conference on Financing for Development[^6] as an integral part of the 2030 Agenda.
 We are committed to its full implementation, which is critical for the realization of the Sustainable Development Goals and their targets.
 10. We welcome the outcome document of the Fourth International Conference on Financing for Development, the Sevilla Commitment, 7  which renews the global financing for development framework, building on the Addis Ababa Action Agenda, and call for its timely and effective implementation.
 11. We reaffirm that the pursuit and enjoyment of human rights and fundamental freedoms for all, encompassing civil, political, economic, social and cultural rights, which includes the right to development, must be respected, protected and promoted, without distinction or discrimination of any kind.
@@ -363,32 +363,32 @@ Development, the outcome of the twenty-fourth special session of the General Ass
 
 ---
 
-1 Report of the World Summit for Social Development, Copenhagen, 6–12 March 1995 (United Nations publication, Sales No. E.96.IV.8), chap. I, resolution 1, annexes I and II.
+[^1]: Report of the World Summit for Social Development, Copenhagen, 6–12 March 1995 (United Nations publication, Sales No. E.96.IV.8), chap. I, resolution 1, annexes I and II.
 
-2 Resolution 70/1.
+[^2]: Resolution 70/1.
 
-3 Resolution S-24/2, annex.
+[^3]: Resolution S-24/2, annex.
 
-4 Resolution 74/4, annex, and resolution 78/1, annex.
+[^4]: Resolution 74/4, annex, and resolution 78/1, annex.
 
-5 Resolution 79/1.
+[^5]: Resolution 79/1.
 
-6 Resolution 69/313, annex.
+[^6]: Resolution 69/313, annex.
 
-7 Resolution 79/323, annex.
+[^7]: Resolution 79/323, annex.
 
-8 United Nations, Treaty Series, vol. 1771, No. 30822.
+[^8]: United Nations, Treaty Series, vol. 1771, No. 30822.
 
-9 Adopted under the United Nations Framework Convention on Climate Change. See FCCC/CP/2015/10/Add.1, decision 1/CP.21, annex.
+[^9]: Adopted under the United Nations Framework Convention on Climate Change. See FCCC/CP/2015/10/Add.1, decision 1/CP.21, annex.
 
-10 Report of the United Nations Conference on Environment and Development, Rio de Janeiro, 3–14 June 1992, vol. I, Resolutions Adopted by the Conference (United Nations publication, Sales No. E.93.I.8 and corrigendum), resolution 1, annex I.
+[^10]: Report of the United Nations Conference on Environment and Development, Rio de Janeiro, 3–14 June 1992, vol. I, Resolutions Adopted by the Conference (United Nations publication, Sales No. E.93.I.8 and corrigendum), resolution 1, annex I.
 
-11 Resolution 76/258, annex.
+[^11]: Resolution 76/258, annex.
 
-12 Resolution 79/233, annex; see also resolution 79/279.
+[^12]: Resolution 79/233, annex; see also resolution 79/279.
 
-13 Resolution 78/317, annex.
+[^13]: Resolution 78/317, annex.
 
-14 United Nations, Treaty Series, vol. 2515, No. 44910.
+[^14]: United Nations, Treaty Series, vol. 2515, No. 44910.
 
-15 Resolution 69/283, annex II.
+[^15]: Resolution 69/283, annex II.

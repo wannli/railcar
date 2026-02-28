@@ -8,7 +8,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from extract import (
     _clean_text,
+    _collect_footnote_nums,
+    _convert_footnote_refs,
     _detect_header_lines,
+    _format_footnote_defs,
     _join_paragraph_numbers,
     _join_paragraphs,
     _relocate_inline_footnotes,
@@ -337,11 +340,11 @@ def test_relocate_inline_footnotes_multiline():
 
 
 def test_clean_text_relocates_footnotes():
-    """clean_text should move inline footnotes to end of document."""
+    """clean_text should move inline footnotes to end of document as GitHub markdown."""
     text = (
         "The General Assembly,\n"
         "\n"
-        "Recalling the Rome Statute 1 of the Court,\n"
+        "Recalling the Rome Statute1 of the Court,\n"
         "\n"
         "cooperation and other international and ---\n"
         "\n"
@@ -362,8 +365,10 @@ def test_clean_text_relocates_footnotes():
     # Body should be continuous without inline footnotes
     assert "international and" in body_part
     assert "regional organizations remain essential" in body_part
-    # Footnote should be at the end
-    assert "1 United Nations, Treaty Series" in fn_part
+    # Inline reference should be converted to GitHub format
+    assert "Statute[^1]" in body_part
+    # Footnote definition should use GitHub markdown format
+    assert "[^1]: United Nations, Treaty Series" in fn_part
     # Page header should be removed
     assert "A/RES/80/6 Report of the International Criminal Court" not in result
 
@@ -374,3 +379,82 @@ def test_does_not_join_separator_with_text():
     result = _clean_text(text, set())
     assert "end ---" not in result
     assert "---" in result
+
+
+def test_format_footnote_defs_single():
+    text = "1 See resolution 169 (II)."
+    result = _format_footnote_defs(text)
+    assert result == "[^1]: See resolution 169 (II)."
+
+
+def test_format_footnote_defs_multiple():
+    text = "1 First footnote.\n\n2 Second footnote.\n\n3 Third footnote."
+    result = _format_footnote_defs(text)
+    assert "[^1]: First footnote." in result
+    assert "[^2]: Second footnote." in result
+    assert "[^3]: Third footnote." in result
+
+
+def test_format_footnote_defs_multiline():
+    """Continuation lines should be indented with 4 spaces."""
+    text = "1 See International Atomic Energy Agency,\nResolutions Adopted.\n\n2 Ibid."
+    result = _format_footnote_defs(text)
+    assert "[^1]: See International Atomic Energy Agency," in result
+    assert "    Resolutions Adopted." in result
+    assert "[^2]: Ibid." in result
+
+
+def test_collect_footnote_nums():
+    text = "1 First.\n\n2 Second.\n\n10 Tenth."
+    nums = _collect_footnote_nums(text)
+    assert nums == {"1", "2", "10"}
+
+
+def test_convert_footnote_refs_basic():
+    body = "the United Nations1 are prevented"
+    result = _convert_footnote_refs(body, {"1"})
+    assert result == "the United Nations[^1] are prevented"
+
+
+def test_convert_footnote_refs_multiple():
+    body = "Nations1 and Treaty2 and more"
+    result = _convert_footnote_refs(body, {"1", "2"})
+    assert "Nations[^1]" in result
+    assert "Treaty[^2]" in result
+
+
+def test_convert_footnote_refs_double_digit():
+    body = "some text10 here"
+    result = _convert_footnote_refs(body, {"10"})
+    assert "text[^10]" in result
+
+
+def test_convert_footnote_refs_ignores_non_footnote_numbers():
+    body = "resolution 169 and section 2"
+    result = _convert_footnote_refs(body, {"1"})
+    # Numbers preceded by a space should not be converted
+    assert result == body
+
+
+def test_convert_footnote_refs_ignores_unknown_numbers():
+    body = "word5 here"
+    result = _convert_footnote_refs(body, {"1", "2"})
+    # 5 is not a known footnote number
+    assert result == body
+
+
+def test_clean_text_github_footnotes_end_to_end():
+    """Full pipeline should produce GitHub-compatible footnotes."""
+    text = (
+        "Recalling the Statute1 of the Court,\n"
+        "\n"
+        "---\n"
+        "\n"
+        "1 United Nations, Treaty Series, vol. 2187.\n"
+        "\n"
+        "2 See resolution 123."
+    )
+    result = clean_text(text)
+    assert "Statute[^1]" in result
+    assert "[^1]: United Nations, Treaty Series, vol. 2187." in result
+    assert "[^2]: See resolution 123." in result
