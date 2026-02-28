@@ -40,15 +40,25 @@ jobs:
           PATTERN_ID: ${{ inputs.pattern_id }}
           MAX_DOCS: ${{ inputs.max_docs || '10' }}
 
-      - name: Commit new documents
+      - name: Commit new and regenerated documents
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add documents/ state/
           if git diff --cached --quiet; then
-            echo "No new documents to commit."
+            echo "No new or changed documents to commit."
           else
-            count=$(git diff --cached --name-only -- 'documents/' | wc -l)
-            git commit -m "docs: fetch ${count} UN document(s) $(date +%Y-%m-%d)"
+            new_count=$(git diff --cached --diff-filter=A --name-only -- 'documents/' | wc -l)
+            regen_count=$(git diff --cached --diff-filter=M --name-only -- 'documents/' | wc -l)
+            msg="docs:"
+            if [ "$new_count" -gt 0 ]; then
+              msg="$msg fetch ${new_count} UN document(s)"
+            fi
+            if [ "$regen_count" -gt 0 ]; then
+              if [ "$new_count" -gt 0 ]; then msg="$msg,"; fi
+              msg="$msg regenerate ${regen_count} file(s) to current schema"
+            fi
+            msg="$msg $(date +%Y-%m-%d)"
+            git commit -m "$msg"
             git push
           fi

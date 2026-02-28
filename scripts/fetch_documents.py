@@ -22,6 +22,7 @@ import requests
 from lxml import etree
 
 from extract import extract_text, format_output, get_version
+from regenerate import regenerate_all
 
 logging.basicConfig(
     level=logging.INFO,
@@ -324,6 +325,9 @@ def main():
 
     log.info("Railcar v%s (extract v%s)", "1.0.0", get_version())
     log.info("Max docs per pattern: %d", max_docs)
+
+    # Regenerate any files produced by an older extract version
+    regenerate_all()
 
     patterns = config.get("patterns", [])
     if target_pattern:
