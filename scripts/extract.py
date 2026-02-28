@@ -117,12 +117,17 @@ def clean_text(text: str) -> str:
     return cleaned
 
 
-def extract_text(pdf_bytes: bytes) -> str:
+RAW_PAGE_SEP = "\f"
+"""Form-feed character used to separate pages in .raw.txt files."""
+
+
+def extract_text(pdf_bytes: bytes) -> tuple[str, str]:
     """Extract text from PDF bytes using PyMuPDF.
 
-    Returns cleaned plaintext with headers/footers removed, paragraphs joined,
-    and common PDF artifacts cleaned up.  Footnotes from each page are
-    collected and placed at the end of the document.
+    Returns ``(cleaned_text, raw_text)`` where *cleaned_text* is the final
+    markdown and *raw_text* is the original per-page extraction joined by
+    form-feed characters (``\\f``).  Save *raw_text* to a ``.raw.txt`` file
+    so that future regeneration can start from the unprocessed source.
     """
     doc = fitz.open(stream=pdf_bytes, filetype="pdf")
     pages = []
@@ -132,6 +137,26 @@ def extract_text(pdf_bytes: bytes) -> str:
             pages.append(text.strip())
     doc.close()
 
+    raw_text = RAW_PAGE_SEP.join(pages)
+    cleaned = _extract_from_pages(pages)
+    return cleaned, raw_text
+
+
+def extract_from_raw(raw_text: str) -> str:
+    """Run the full extraction pipeline on raw page text.
+
+    *raw_text* is the original per-page PDF extraction joined by form-feed
+    characters, as produced by :func:`extract_text` and stored in ``.raw.txt``
+    files.  This allows regeneration to start from the unprocessed source so
+    that every cleaning step (including footnote-reference conversion) works
+    correctly.
+    """
+    pages = raw_text.split(RAW_PAGE_SEP)
+    return _extract_from_pages(pages)
+
+
+def _extract_from_pages(pages: list[str]) -> str:
+    """Shared implementation: clean a list of raw page strings."""
     # Separate footnotes from body text on each page
     body_parts = []
     all_footnotes = []

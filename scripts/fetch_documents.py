@@ -284,7 +284,7 @@ def process_pattern(pattern_cfg: dict, state: dict, settings: dict, max_docs: in
 
         # Extract text
         try:
-            text = extract_text(pdf_bytes)
+            text, raw_text = extract_text(pdf_bytes)
         except Exception as e:
             log.error("Extraction failed for %s: %s", symbol, e)
             consecutive_misses += 1
@@ -293,6 +293,13 @@ def process_pattern(pattern_cfg: dict, state: dict, settings: dict, max_docs: in
 
         if not text.strip():
             log.warning("Empty text extracted from %s (possibly scanned image)", symbol)
+
+        # Save raw page text for future regeneration
+        raw_dir = DOCS_DIR / ".raw" / pid
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        raw_file = raw_dir / f"{sanitize_symbol(symbol)}.raw.txt"
+        raw_file.write_text(raw_text, encoding="utf-8")
+        log.info("Saved raw: %s", raw_file.name)
 
         # Write output with versioned metadata
         output = format_output(text, metadata)

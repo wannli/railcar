@@ -1,9 +1,11 @@
 """
 Re-generate document files whose extract_version is older than the current version.
 
-Reads each existing .md file, parses the YAML front matter and body text,
-re-applies the current cleaning logic to the body, then re-formats the output
-using the current schema version. No PDF re-download is needed.
+When a ``.raw.txt`` file exists (the original per-page PDF extraction), the full
+pipeline is re-run from scratch so that every cleaning step—including footnote
+reference conversion—works correctly.  When no raw file is available (legacy
+documents), the already-cleaned body text is re-processed as a best-effort
+fallback.
 
 This ensures all files are reprocessed with the latest extraction logic
 whenever EXTRACT_VERSION is bumped in extract.py.
@@ -12,11 +14,20 @@ whenever EXTRACT_VERSION is bumped in extract.py.
 import logging
 from pathlib import Path
 
-from extract import EXTRACT_VERSION, clean_text, format_output, parse_document
+from extract import EXTRACT_VERSION, clean_text, extract_from_raw, format_output, parse_document
 
 log = logging.getLogger("railcar.regenerate")
 
 DOCS_DIR = Path(__file__).resolve().parent.parent / "documents"
+RAW_DIR = DOCS_DIR / ".raw"
+
+
+def _raw_path_for(md_path: Path) -> Path:
+    """Return the .raw.txt path corresponding to a document .md path."""
+    # md_path:  documents/ga-res-80/A_RES_80_1.md
+    # raw_path: documents/.raw/ga-res-80/A_RES_80_1.raw.txt
+    rel = md_path.relative_to(DOCS_DIR)
+    return RAW_DIR / rel.parent / f"{rel.stem}.raw.txt"
 
 
 def needs_regeneration(file_version: str) -> bool:
@@ -39,9 +50,21 @@ def regenerate_file(path: Path) -> bool:
     if not needs_regeneration(file_version):
         return False
 
-    log.info("Regenerating %s (version %s -> %s)", path.name, file_version, EXTRACT_VERSION)
+    raw_file = _raw_path_for(path)
+    if raw_file.exists():
+        log.info(
+            "Regenerating %s from raw source (version %s -> %s)",
+            path.name, file_version, EXTRACT_VERSION,
+        )
+        raw_text = raw_file.read_text(encoding="utf-8")
+        body = extract_from_raw(raw_text)
+    else:
+        log.info(
+            "Regenerating %s from cleaned body (no raw file) (version %s -> %s)",
+            path.name, file_version, EXTRACT_VERSION,
+        )
+        body = clean_text(body)
 
-    body = clean_text(body)
     output = format_output(body, metadata)
     path.write_text(output, encoding="utf-8")
     return True

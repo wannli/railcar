@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from extract import (
+    RAW_PAGE_SEP,
     _clean_text,
     _collect_footnote_nums,
     _convert_footnote_refs,
@@ -17,6 +18,7 @@ from extract import (
     _relocate_inline_footnotes,
     _split_page_footnotes,
     clean_text,
+    extract_from_raw,
 )
 
 
@@ -458,3 +460,58 @@ def test_clean_text_github_footnotes_end_to_end():
     assert "Statute[^1]" in result
     assert "[^1]: United Nations, Treaty Series, vol. 2187." in result
     assert "[^2]: See resolution 123." in result
+
+
+def test_extract_from_raw_converts_footnote_refs():
+    """extract_from_raw should run the full pipeline including footnote ref conversion."""
+    page1 = (
+        "United Nations\n"
+        "A/RES/80/6\n"
+        "\n"
+        "General Assembly\n"
+        "\n"
+        "Recalling the Rome Statute1 of the Court,\n"
+        "\n"
+        "cooperation and other international2 organisations,\n"
+        "\n"
+        "1.\n"
+        "Welcomes the report.\n"
+        "\n"
+        "_______________\n"
+        "\n"
+        "1 United Nations, Treaty Series, vol. 2187, No. 38544.\n"
+        "2 See A/58/874."
+    )
+    page2 = (
+        "A/RES/80/6\n"
+        "\n"
+        "2.\n"
+        "Also welcomes the cooperation."
+    )
+    raw_text = RAW_PAGE_SEP.join([page1, page2])
+    result = extract_from_raw(raw_text)
+
+    # Footnote references should be converted
+    assert "Statute[^1]" in result
+    assert "international[^2]" in result
+
+    # Footnote definitions should use GitHub format
+    assert "[^1]: United Nations, Treaty Series, vol. 2187, No. 38544." in result
+    assert "[^2]: See A/58/874." in result
+
+    # Body content preserved
+    assert "1. Welcomes the report." in result
+    assert "2. Also welcomes the cooperation." in result
+
+
+def test_extract_from_raw_roundtrip_preserves_page_boundaries():
+    """Raw text split by form-feeds should reproduce the same pages."""
+    page1 = "Page one content\n_______________\n1 Footnote."
+    page2 = "Page two content"
+    raw = RAW_PAGE_SEP.join([page1, page2])
+
+    # Splitting should recover original pages
+    pages = raw.split(RAW_PAGE_SEP)
+    assert len(pages) == 2
+    assert "Page one" in pages[0]
+    assert "Page two" in pages[1]
