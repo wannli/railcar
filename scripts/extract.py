@@ -52,6 +52,33 @@ def format_output(text: str, metadata: dict) -> str:
     return "\n".join(lines)
 
 
+def parse_document(content: str) -> tuple[dict, str]:
+    """Parse a txt file with YAML front matter into (metadata_dict, body_text).
+
+    Expects the file to start with '---' delimiters around YAML front matter,
+    followed by the extracted text body.
+    """
+    if not content.startswith("---"):
+        return {}, content
+
+    # Find the closing '---'
+    end = content.index("---", 3)
+    front_matter = content[3:end].strip()
+    body = content[end + 3:].lstrip("\n")
+
+    metadata = {}
+    for line in front_matter.splitlines():
+        if ":" not in line:
+            continue
+        key, _, value = line.partition(":")
+        value = value.strip().strip('"')
+        # Unescape YAML double-quoted values
+        value = value.replace('\\"', '"').replace("\\\\", "\\")
+        metadata[key.strip()] = value
+
+    return metadata, body
+
+
 def _escape_yaml(s: str) -> str:
     """Escape characters that would break YAML double-quoted strings."""
     return s.replace("\\", "\\\\").replace('"', '\\"')
