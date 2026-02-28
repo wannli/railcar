@@ -5,8 +5,8 @@ title: "Awaza Political Declaration :"
 date: "2025-10-15"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4091276/files/A_RES_80_3-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:41:00Z"
+extract_version: "1.0.0"
+extracted_at: "2026-02-28T15:15:42Z"
 ---
 
 United Nations 
