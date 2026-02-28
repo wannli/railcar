@@ -5,8 +5,8 @@ title: "Awaza Political Declaration :"
 date: "2025-10-15"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4091276/files/A_RES_80_3-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/3
@@ -46,29 +46,7 @@ Global context and shared commitments 3. We gather at a critical juncture marked
 4. We stress the specific needs and challenges faced by landlocked developing countries due to the lack of direct territorial access to the sea, obstacles to transport and communication, long distances from major markets, cumbersome transit procedures and the lack of adequate, safe, affordable, accessible infrastructure, and recognize the need for strengthened international solidarity to support their structural transformation, industrialization, economic diversification and full integration into the regional and global economy.
 5. We recall that 2025 was proclaimed by the General Assembly as the International Year of Peace and Trust,4 and recognize that there can be no sustainable development without peace and no peace without sustainable development – that is also relevant for landlocked developing countries.
 6. We recognize that, despite some positive results in certain areas of the Vienna Programme of Action, progress fell short, and note with concern that a severe financing deficit, in particular for infrastructure, limited data and technical capacity constraints undermined progress in achieving the goals and targets set out in the Vienna Programme of Action.
-7. We further reaffirm our commitment to enhancing our efforts for the full and timely implementation of the 2030 Agenda for Sustainable Development 5 and its Sustainable Development Goals, the United Nations Framework Convention on Climate Change6 and the Paris Agreement,7 the Sendai Framework for Disaster Risk Reduction 2015–2030,8 the New Urban Agenda9 and the Convention on Biological ---
-
-1 Resolution 79/233, annex; see also resolution 79/279.
-
-2 Report of the International Ministerial Conference of Landlocked and Transit Developing Countries and Donor Countries and International Financial and Development Institutions on Transit Transport Cooperation, Almaty, Kazakhstan, 28 and 29 August 2003 (A/CONF.202/3), annex I.
-
-3 Resolution 69/137, annex II.
-
-4 See resolution 78/266.
-
-5 Resolution 70/1.
-
-6 United Nations, Treaty Series, vol. 1771, No. 30822.
-
-7 Adopted under the UNFCCC in FCCC/CP/2015/10/Add.1, decision 1/CP.21.
-
-8 Resolution 69/283, annex II.
-
-9 Resolution 71/256, annex.
-
-Awaza Political Declaration A/RES/80/3
-
-Diversity10 and the Kunming-Montreal Global Biodiversity Framework,11 particularly with regard to the special development needs and challenges of landlocked developing countries.
+7. We further reaffirm our commitment to enhancing our efforts for the full and timely implementation of the 2030 Agenda for Sustainable Development 5 and its Sustainable Development Goals, the United Nations Framework Convention on Climate Change6 and the Paris Agreement,7 the Sendai Framework for Disaster Risk Reduction 2015–2030,8 the New Urban Agenda9 and the Convention on Biological Diversity10 and the Kunming-Montreal Global Biodiversity Framework,11 particularly with regard to the special development needs and challenges of landlocked developing countries.
 8. We welcome the outcome document of the Fourth International Conference on Financing for Development, the Sevilla Commitment, 12 which renews the global financing for development framework, building on the Addis Ababa Action Agenda, 13 and call for its timely and effective implementation. We also uphold and will advance all commitments in the 2002 Monterrey Consensus14 and the 2008 Doha Declaration,15 as well as the relevant commitments in the Pact for the Future. 16 9. We note the interest and commitment of the landlocked developing countries to develop a dedicated work programme on landlocked developing countries under the United Nations Framework Convention on Climate Change.
 10. We welcome the convening of the twenty-ninth session of the Conference of the Parties to the United Nations Framework Convention on Climate Change, the nineteenth session of the Conference of the Parties serving as the Meeting of the Parties to the Kyoto Protocol and the sixth session of the Conference of the Parties serving as the Meeting of the Parties to the Paris Agreement in Baku, Azerbaijan in November 2024, as the first session of the Conference of the Parties held in a landlocked developing country, and the adoption of their decisions by Parties.
 11. We also welcome the convening of the seventeenth meeting of the Conference of the Parties to the Convention on Biological Diversity and the meetings of the Conference of the Parties serving as the Meetings of the Parties to the Protocols to the Convention, to be held in Armenia in 2026, and the seventeenth session of the Conference of the Parties to the United Nations Convention to Combat Desertification in Those Countries Experiencing Serious Drought and/or Desertification, Particularly in Africa, to be held in Mongolia in 2026.
@@ -77,24 +55,6 @@ Diversity10 and the Kunming-Montreal Global Biodiversity Framework,11 particular
 II. Implementation of the Awaza Programme of Action for Landlocked Developing Countries for the Decade 2024–2034 13. We strongly commit ourselves to the full implementation of the Awaza Programme of Action for Landlocked Developing Countries for the Decade 2024–2034 throughout the coming decade in line with its five mutually reinforcing priority areas:
 
 (a) Structural transformation and science, technology and innovation;
----
-
-10 United Nations, Treaty Series, vol. 1760, No. 30619.
-
-11 United Nations Environment Programme, document CBD/COP/15/17, decision 15/4, annex.
-
-12 Resolution 79/323, annex.
-
-13 Resolution 69/313, annex.
-
-14 Report of the International Conference on Financing for Development, Monterrey, Mexico,
-18–22 March 2002 (United Nations publication, Sales No. E.02.II.A.7), chap. I, resolution 1, annex.
-
-15 Resolution 63/239, annex.
-
-16 Resolution 79/1.
-
-A/RES/80/3 Awaza Political Declaration
 
 (b) Trade, trade facilitation and regional integration;
 
@@ -122,3 +82,37 @@ III. Conclusion and call to action 23. We declare our firm resolve to act urgent
 24. We request the Secretary-General to ensure the full mobilization and coordination of all relevant parts of the United Nations system to facilitate coordinated implementation and coherence in the follow-up to and monitoring of the Awaza Programme of Action at the national, subregional, regional and global levels.
 We call upon relevant organizations and bodies of the United Nations system and invite international organizations and relevant regional and subregional organizations to integrate the Awaza Programme of Action into their programmes of work, as appropriate, within their respective mandates.
 25. We express our deepest appreciation to the Government and people of Turkmenistan for their generous hospitality and for hosting the Conference in an excellent manner in the spirit of global cooperation and solidarity.
+
+---
+
+1 Resolution 79/233, annex; see also resolution 79/279.
+
+2 Report of the International Ministerial Conference of Landlocked and Transit Developing Countries and Donor Countries and International Financial and Development Institutions on Transit Transport Cooperation, Almaty, Kazakhstan, 28 and 29 August 2003 (A/CONF.202/3), annex I.
+
+3 Resolution 69/137, annex II.
+
+4 See resolution 78/266.
+
+5 Resolution 70/1.
+
+6 United Nations, Treaty Series, vol. 1771, No. 30822.
+
+7 Adopted under the UNFCCC in FCCC/CP/2015/10/Add.1, decision 1/CP.21.
+
+8 Resolution 69/283, annex II.
+
+9 Resolution 71/256, annex.
+
+10 United Nations, Treaty Series, vol. 1760, No. 30619.
+
+11 United Nations Environment Programme, document CBD/COP/15/17, decision 15/4, annex.
+
+12 Resolution 79/323, annex.
+
+13 Resolution 69/313, annex.
+
+14 Report of the International Conference on Financing for Development, Monterrey, Mexico, 18–22 March 2002 (United Nations publication, Sales No. E.02.II.A.7), chap. I, resolution 1, annex.
+
+15 Resolution 63/239, annex.
+
+16 Resolution 79/1.

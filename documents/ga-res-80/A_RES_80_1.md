@@ -5,8 +5,8 @@ title: "Participation by the State of Palestine during the 80th session :"
 date: "2025-09-19"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4089279/files/A_RES_80_1-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/1
@@ -35,13 +35,7 @@ Recalling also the Headquarters Agreement,
 
 1. Decides, without setting a precedent for future general debates and mandated high-level meetings and while stressing that the representatives of the State of Palestine should be able to participate in person in the relevant meetings at the United Nations in New York, that:
 
-(a) The State of Palestine may submit a pre‑recorded statement of its President, which will be played in the General Assembly Hall during the general debate of the ---
-
-1 See resolution 169 (II).
-
-A/RES/80/1 Participation by the State of Palestine during the eightieth session
-
-Assembly at its eightieth session after introduction by its representative who is physically present in the Assembly Hall;
+(a) The State of Palestine may submit a pre‑recorded statement of its President, which will be played in the General Assembly Hall during the general debate of the Assembly at its eightieth session after introduction by its representative who is physically present in the Assembly Hall;
 
 (b) The State of Palestine may deliver statements by means of videoconference or submit a pre‑recorded statement at the meetings of the High-level International Conference for the Peaceful Settlement of the Question of Palestine and the Implementation of the Two-State Solution;
 
@@ -52,3 +46,7 @@ Assembly at its eightieth session after introduction by its representative who i
 3. Further decides that these procedures shall apply only during the eightieth session.
 
 3rd plenary meeting 19 September 2025
+
+---
+
+1 See resolution 169 (II).

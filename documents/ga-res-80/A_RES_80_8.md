@@ -5,8 +5,8 @@ title: "Building a peaceful and better world through sport and the Olympic ideal
 date: "2025-11-20"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093934/files/A_RES_80_8-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/8
@@ -30,11 +30,6 @@ Recalling also its resolution 48/11 of 25 October 1993, which, inter alia, reviv
 Recalling further that the core concept of ekecheiria, historically, has been the cessation of hostilities from seven days before until seven days after the Olympic Games, which, according to the legendary oracle of Delphi, was to replace the cycle of conflict with a friendly athletic competition every four years,
 
 Recognizing the valuable contribution of sport in promoting education, sustainable development, peace, cooperation, solidarity, fairness, social inclusion and health at the local, regional and international levels, and noting that, as declared in the 2005 World Summit Outcome, 1  sports can contribute to an atmosphere of tolerance and understanding among peoples and nations,
----
-
-1 Resolution 60/1.
-
-A/RES/80/8 Building a peaceful and better world through sport and the Olympic ideal
 
 Recognizing also the role that sports can play to prevent and counter terrorism and violent extremism conducive to terrorism, and its contributions to building resilience against radicalization to violence, recruitment and terrorist acts,
 
@@ -56,15 +51,7 @@ Acknowledging that the Milano-Cortina 2026 Olympic and Paralympic Winter Games w
 
 Recognizing the importance of fostering strengthened international cooperation across editions of the Olympic and Paralympic Games, in support of the Olympic Truce and with a view to promoting collective efforts to uphold the universal value of sport as a driver for peaceful and inclusive societies, mutual understanding, solidarity and intercultural dialogue among nations,
 
-Recalling the importance of the meaningful engagement of local communities in the organization and implementation of the Olympic and Paralympic Winter ---
-
-2 Resolution 55/2.
-
-3 Resolution 70/1.
-
-Building a peaceful and better world through sport and the Olympic ideal A/RES/80/8
-
-Games, as a defining feature of Milano-Cortina 2026, in order to promote a strong sense of local ownership, community dialogue and identity, social integration, cohesion and the safeguarding of cultural heritage,
+Recalling the importance of the meaningful engagement of local communities in the organization and implementation of the Olympic and Paralympic Winter Games, as a defining feature of Milano-Cortina 2026, in order to promote a strong sense of local ownership, community dialogue and identity, social integration, cohesion and the safeguarding of cultural heritage,
 
 Noting with appreciation the commitment of the Milano-Cortina 2026 Olympic and Paralympic Winter Games to advancing all three dimensions of sustainable development and leaving a long-term legacy, including through measures aimed at reducing environmental impact, promoting resilient and sustainable infrastructure and ensuring lasting benefits for local populations and future generations,
 
@@ -80,13 +67,6 @@ United States of America, from 14 to 30 July and from 15 to 27 August 2028, resp
 Acknowledging the joint endeavours of the International Olympic Committee, the International Paralympic Committee and relevant United Nations entities in such fields as the promotion of human rights, human development, poverty alleviation, humanitarian assistance, health promotion, HIV and AIDS prevention, child and youth education, gender equality, peacebuilding and sustainable development,
 
 Acknowledging also the importance of the Youth Olympic Games in inspiring youth through integrated sports, cultural and educational experiences, noting in this regard the successful conclusion of the Winter Youth Olympic Games held in Gangwon, Republic of Korea, in 2024, and welcoming the Summer Youth Olympic Games to be held in Dakar in 2026, as the first Olympic event organized on the African continent, and the Winter Youth Olympic Games to be held in Dolomiti Valtellina, Italy, in 2028,
----
-
-4 United Nations, Treaty Series, vol. 1577, No. 27531.
-
-5 Resolution S-27/2, annex.
-
-A/RES/80/8 Building a peaceful and better world through sport and the Olympic ideal
 
 Welcoming the proactive efforts of Milano-Cortina 2026 in conjunction with all Organizing Committees of upcoming Olympic Games, to implement new standards for delivering more sustainable Games in accordance with the International Olympic Committee reforms,
 
@@ -105,11 +85,6 @@ Recognizing the humanitarian opportunities presented by the Olympic Truce and by
 Recalling that, in its resolution 79/8, it supported the independence and autonomy of sport as well as the mission of the International Olympic Committee in leading the Olympic movement and of the International Paralympic Committee in leading the Paralympic movement, and recognized the unifying and conciliative nature of the Olympic Games and major international sport events and that such events are organized in the spirit of peace, mutual understanding, friendship, tolerance and inadmissibility of discrimination of any kind,
 
 Acknowledging all the fundamental principles of the Olympic Charter, including principle 6, which states that the enjoyment of the rights and freedoms set forth in the Olympic Charter shall be secured for all, without discrimination of any kind,
----
-
-6 United Nations, Treaty Series, vol. 2515, No. 44910.
-
-Building a peaceful and better world through sport and the Olympic ideal A/RES/80/8
 
 Noting with satisfaction that the United Nations flag will be flown at the Olympic stadium and in the Olympic and Paralympic villages of the XXV Olympic Winter Games and the XIV Paralympic Winter Games,
 
@@ -137,3 +112,17 @@ A/RES/80/8 Building a peaceful and better world through sport and the Olympic id
 the sub-item before the Games of the XXXIV Olympiad and the XVIII Paralympic Games, to be held in Los Angeles in 2028.
 
 46th plenary meeting 19 November 2025
+
+---
+
+1 Resolution 60/1.
+
+2 Resolution 55/2.
+
+3 Resolution 70/1.
+
+4 United Nations, Treaty Series, vol. 1577, No. 27531.
+
+5 Resolution S-27/2, annex.
+
+6 United Nations, Treaty Series, vol. 2515, No. 44910.
