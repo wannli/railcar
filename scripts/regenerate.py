@@ -32,6 +32,9 @@ def regenerate_file(path: Path) -> bool:
     content = path.read_text(encoding="utf-8")
     metadata, body = parse_document(content)
 
+    if "symbol" not in metadata:
+        return False
+
     file_version = metadata.get("extract_version", "")
     if not needs_regeneration(file_version):
         return False

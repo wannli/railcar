@@ -5,8 +5,8 @@ title: "2025 Political Declaration on the Implementation of the United Nations G
 date: "2025-11-25"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4094711/files/A_RES_80_9-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/9
@@ -94,34 +94,34 @@ We also urge the Secretary-General to ensure that all United Nations procurement
 
 ---
 
-1 Resolution 64/293.
+[^1]: Resolution 64/293.
 
-2 Resolution 72/1.
+[^2]: Resolution 72/1.
 
-3 Resolution 76/7, annex.
+[^3]: Resolution 76/7, annex.
 
-4 Resolution 70/1.
+[^4]: Resolution 70/1.
 
-5 United Nations, Treaty Series, vol. 2225, No. 39574.
+[^5]: United Nations, Treaty Series, vol. 2225, No. 39574.
 
-6 Ibid., vol. 2237, No. 39574.
+[^6]: Ibid., vol. 2237, No. 39574.
 
-7 Ibid., vol. 1577, No. 27531.
+[^7]: Ibid., vol. 1577, No. 27531.
 
-8 Ibid., vols. 2171 and 2173, No. 27531.
+[^8]: Ibid., vols. 2171 and 2173, No. 27531.
 
-9 Resolution 73/195, annex.
+[^9]: Resolution 73/195, annex.
 
-10 Official Records of the General Assembly, Seventy-third Session, Supplement No. 12 (A/73/12 (Part I) and A/73/12 (Part II)), part II.
+[^10]: Official Records of the General Assembly, Seventy-third Session, Supplement No. 12 (A/73/12 (Part I) and A/73/12 (Part II)), part II.
 
-11 CEDAW/C/GC/38.
+[^11]: CEDAW/C/GC/38.
 
-2025 Political Declaration on the Implementation of the United Nations Global Plan of Action to Combat Trafficking in Persons A/RES/80/9 9. We commit to fulfil our obligations and intensify our efforts to prevent, address and eliminate the demand that fosters trafficking in persons, especially of women and children, for all forms of exploitation, and in this regard to put in place or enhance preventive measures, including legislative and other measures to deter exploiters, and those who facilitate or profit from the exploitation of trafficking victims, and hold them accountable. 10. We reaffirm our commitment to address the social, economic, cultural, political and other factors that make people vulnerable to trafficking in persons, such as poverty, underdevelopment, unemployment, inequality, humanitarian emergencies, armed conflicts and natural disasters, sexual violence, gender discrimination, racial discrimination, social and financial exclusion and marginalization, as well as negative social norms, and a culture of tolerance towards violence against women, youth and children. We reiterate our commitment to promote education and awareness-raising campaigns to prevent trafficking in persons, and we welcome the designation of 30 July as the World Day against Trafficking in Persons.12 11. We express our serious concern over the significant and enduring trafficking of women and children, recognize that trafficking in persons disproportionately affects them. We note with concern potential cases of trafficking in women for the exploitation of surrogacy. We express grave concern about the increase in child trafficking, primarily for forced labour, forced marriage, sexual exploitation, and involvement in criminal activities. We note the specific vulnerabilities of children, including children and youth with disabilities and unaccompanied children, to various forms of exploitation, including in the context of travel, tourism and sports, and the need to address them, as well as the cultural practices that justify or tolerate their demand. We call upon Member States to enact or update national laws and establish comprehensive policies, programmes and other measures, as appropriate, that provide for the protection of trafficked women and children from revictimization and appropriate assistance and protection in the best interests of the child. 12. We express solidarity with and compassion for victims and survivors, we call for full respect of their human rights and recognizing their role as agents of change in the global fight against trafficking in persons. We acknowledge the need to actively involve them, incorporating their perspective and experience in all efforts to prevent and combat trafficking in persons, including in designing, implementing, monitoring and evaluating such efforts. We will provide victim-centred and trauma-informed care, assistance and services for their recovery and rehabilitation, access to health, including sexual and reproductive health-care services and mental health and psychosocial support services, and seek to enhance the provision of safe shelter, legal aid, long-term support, reintegration and timely family reunification, including protection and assistance, working also with civil society and other relevant partners. We will ensure that victims are treated with respect and dignity and are not inappropriately penalized or adversely affected by any actions taken by government authorities and communities, including criminal, civil, administrative and immigration penalties, for acts that they commit as a direct consequence of their trafficking situation, through the implementation of both the principle of non‑prosecution and non‑punishment of victims of trafficking subject to national laws, rules and regulations. 13. We commit to undertake appropriate measures to facilitate access to justice and protections for victims of trafficking in persons that should not be conditional on their participation in criminal proceedings, taking into account national legislation, and we will seek to ensure that laws and policies are in place to alleviate reliance on victims’ ---
+[^2025]: Political Declaration on the Implementation of the United Nations Global Plan of Action to Combat Trafficking in Persons A/RES/80/9 9. We commit to fulfil our obligations and intensify our efforts to prevent, address and eliminate the demand that fosters trafficking in persons, especially of women and children, for all forms of exploitation, and in this regard to put in place or enhance preventive measures, including legislative and other measures to deter exploiters, and those who facilitate or profit from the exploitation of trafficking victims, and hold them accountable. 10. We reaffirm our commitment to address the social, economic, cultural, political and other factors that make people vulnerable to trafficking in persons, such as poverty, underdevelopment, unemployment, inequality, humanitarian emergencies, armed conflicts and natural disasters, sexual violence, gender discrimination, racial discrimination, social and financial exclusion and marginalization, as well as negative social norms, and a culture of tolerance towards violence against women, youth and children. We reiterate our commitment to promote education and awareness-raising campaigns to prevent trafficking in persons, and we welcome the designation of 30 July as the World Day against Trafficking in Persons.12 11. We express our serious concern over the significant and enduring trafficking of women and children, recognize that trafficking in persons disproportionately affects them. We note with concern potential cases of trafficking in women for the exploitation of surrogacy. We express grave concern about the increase in child trafficking, primarily for forced labour, forced marriage, sexual exploitation, and involvement in criminal activities. We note the specific vulnerabilities of children, including children and youth with disabilities and unaccompanied children, to various forms of exploitation, including in the context of travel, tourism and sports, and the need to address them, as well as the cultural practices that justify or tolerate their demand. We call upon Member States to enact or update national laws and establish comprehensive policies, programmes and other measures, as appropriate, that provide for the protection of trafficked women and children from revictimization and appropriate assistance and protection in the best interests of the child. 12. We express solidarity with and compassion for victims and survivors, we call for full respect of their human rights and recognizing their role as agents of change in the global fight against trafficking in persons. We acknowledge the need to actively involve them, incorporating their perspective and experience in all efforts to prevent and combat trafficking in persons, including in designing, implementing, monitoring and evaluating such efforts. We will provide victim-centred and trauma-informed care, assistance and services for their recovery and rehabilitation, access to health, including sexual and reproductive health-care services and mental health and psychosocial support services, and seek to enhance the provision of safe shelter, legal aid, long-term support, reintegration and timely family reunification, including protection and assistance, working also with civil society and other relevant partners. We will ensure that victims are treated with respect and dignity and are not inappropriately penalized or adversely affected by any actions taken by government authorities and communities, including criminal, civil, administrative and immigration penalties, for acts that they commit as a direct consequence of their trafficking situation, through the implementation of both the principle of non‑prosecution and non‑punishment of victims of trafficking subject to national laws, rules and regulations. 13. We commit to undertake appropriate measures to facilitate access to justice and protections for victims of trafficking in persons that should not be conditional on their participation in criminal proceedings, taking into account national legislation, and we will seek to ensure that laws and policies are in place to alleviate reliance on victims’ ---
 
-12 See resolution 68/192.
+[^12]: See resolution 68/192.
 
-13 Resolution 48/134, annex.
+[^13]: Resolution 48/134, annex.
 
-14 Resolution 79/243, annex.
+[^14]: Resolution 79/243, annex.
 
-15 Guiding Principles on Business and Human Rights: Implementing the United Nations “Protect, Respect and Remedy” Framework (A/HRC/17/31, annex).
+[^15]: Guiding Principles on Business and Human Rights: Implementing the United Nations “Protect, Respect and Remedy” Framework (A/HRC/17/31, annex).

@@ -5,8 +5,8 @@ title: "Scale of assessments for the apportionment of the expenses of the United
 date: "2025-10-15"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4091275/files/A_RES_80_2-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/2
@@ -43,4 +43,4 @@ Reaffirming the obligation of Member States under Article 17 of the Charter of t
 
 ---
 
-1  Official Records of the General Assembly, Eightieth Session, Supplement No. 11 (A/80/11).
+[^1]: Official Records of the General Assembly, Eightieth Session, Supplement No. 11 (A/80/11).

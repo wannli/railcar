@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 import fitz  # PyMuPDF
 
-EXTRACT_VERSION = "1.2.0"
+EXTRACT_VERSION = "1.3.0"
 
 # Matches UN distribution codes like "25-15106 (E)", "25-15106", or "*2515106*"
 _RE_DIST_CODE = re.compile(r"^\d{2}-\d{5}(\s*\([A-Z]\))?\s*$")
@@ -32,12 +32,71 @@ _RE_SUBPARA = re.compile(r"^(\([a-z]+\)|\([ivxlc]+\))\s*$")
 # Matches a footnote definition line: starts with digit(s), space, then text
 _RE_FOOTNOTE_DEF = re.compile(r"^\d+\s+\S")
 
+# Captures footnote number and text separately
+_RE_FOOTNOTE_DEF_PARTS = re.compile(r"^(\d+)\s+(.*)")
+
 # Matches a UN document symbol in a page header line
 _RE_PAGE_HEADER = re.compile(r"[A-Z]/RES/\d+/\d+")
 
 
 def get_version() -> str:
     return EXTRACT_VERSION
+
+
+def _format_footnote_defs(text: str) -> str:
+    """Convert footnote definitions to GitHub markdown format.
+
+    Transforms ``1 See resolution 169 (II).`` into
+    ``[^1]: See resolution 169 (II).``.  Continuation lines of multi-line
+    footnotes are indented with four spaces so GitHub treats them as part of
+    the same footnote.
+    """
+    lines = text.split("\n")
+    result: list[str] = []
+    in_footnote = False
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            result.append("")
+            in_footnote = False
+            continue
+        m = _RE_FOOTNOTE_DEF_PARTS.match(stripped)
+        if m:
+            result.append(f"[^{m.group(1)}]: {m.group(2)}")
+            in_footnote = True
+        elif in_footnote:
+            result.append(f"    {stripped}")
+        else:
+            result.append(stripped)
+    return "\n".join(result)
+
+
+def _collect_footnote_nums(text: str) -> set[str]:
+    """Extract all footnote numbers from a block of footnote definitions."""
+    nums: set[str] = set()
+    for line in text.split("\n"):
+        m = _RE_FOOTNOTE_DEF_PARTS.match(line.strip())
+        if m:
+            nums.add(m.group(1))
+    return nums
+
+
+def _convert_footnote_refs(body: str, footnote_nums: set[str]) -> str:
+    """Convert inline footnote references to GitHub markdown format.
+
+    Transforms ``word1`` into ``word[^1]`` where ``1`` is a known footnote
+    number (a letter immediately followed by digits with no space).
+    """
+    if not footnote_nums:
+        return body
+
+    def _replace_ref(m: re.Match) -> str:
+        num = m.group(2)
+        if num in footnote_nums:
+            return f"{m.group(1)}[^{num}]"
+        return m.group(0)
+
+    return re.sub(r"([a-zA-Z])(\d+)(?=[\s,;.!?\)\]]|$)", _replace_ref, body)
 
 
 def clean_text(text: str) -> str:
@@ -51,6 +110,9 @@ def clean_text(text: str) -> str:
     body, footnotes = _relocate_inline_footnotes(text)
     cleaned = _clean_text(body, header_lines=set())
     if footnotes:
+        footnote_nums = _collect_footnote_nums(footnotes)
+        cleaned = _convert_footnote_refs(cleaned, footnote_nums)
+        footnotes = _format_footnote_defs(footnotes)
         return cleaned + "\n\n---\n\n" + footnotes
     return cleaned
 
@@ -85,6 +147,9 @@ def extract_text(pdf_bytes: bytes) -> str:
     # Append collected footnotes at the end
     if all_footnotes:
         footnote_text = "\n\n".join(all_footnotes)
+        footnote_nums = _collect_footnote_nums(footnote_text)
+        text = _convert_footnote_refs(text, footnote_nums)
+        footnote_text = _format_footnote_defs(footnote_text)
         text = text + "\n\n---\n\n" + footnote_text
 
     return text.strip()

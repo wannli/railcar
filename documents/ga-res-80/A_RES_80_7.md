@@ -5,8 +5,8 @@ title: "Report of the International Atomic Energy Agency :"
 date: "2025-11-18"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093784/files/A_RES_80_7-EN.pdf
-extract_version: "1.2.0"
-extracted_at: "2026-02-28T18:12:03Z"
+extract_version: "1.3.0"
+extracted_at: "2026-02-28T18:33:11Z"
 ---
 
 United Nations A/RES/80/7
@@ -48,8 +48,8 @@ GC(69)/RES/15, entitled “Application of IAEA safeguards in the Middle East”;
 
 ---
 
-1 See A/80/348.
+[^1]: See A/80/348.
 
-2 See International Atomic Energy Agency, Resolutions Adopted and Other Relevant Decisions Taken during the 69th Regular Session of the General Conference, 15–19 September 2025 (GC(69)/RES/DEC(2025)) for the full texts of relevant resolutions and decisions and information regarding their adoption.
+[^2]: See International Atomic Energy Agency, Resolutions Adopted and Other Relevant Decisions Taken during the 69th Regular Session of the General Conference, 15–19 September 2025 (GC(69)/RES/DEC(2025)) for the full texts of relevant resolutions and decisions and information regarding their adoption.
 
-3 See International Atomic Energy Agency General Conference resolution GC(67)/RES/15, entitled “Restoration of the Sovereign Equality of Member States in the IAEA”.
+[^3]: See International Atomic Energy Agency General Conference resolution GC(67)/RES/15, entitled “Restoration of the Sovereign Equality of Member States in the IAEA”.
