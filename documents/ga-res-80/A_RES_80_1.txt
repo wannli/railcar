@@ -5,8 +5,8 @@ title: "Participation by the State of Palestine during the 80th session :"
 date: "2025-09-19"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4089279/files/A_RES_80_1-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:41:00Z"
+extract_version: "1.0.0"
+extracted_at: "2026-02-28T15:15:32Z"
 ---
 
 United Nations 
