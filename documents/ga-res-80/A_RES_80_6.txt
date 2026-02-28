@@ -5,8 +5,8 @@ title: "Report of the International Criminal Court :"
 date: "2025-11-12"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093218/files/A_RES_80_6-EN.pdf
-extract_version: "1.0.0"
-extracted_at: "2026-02-28T15:15:56Z"
+extract_version: "1.1.0"
+extracted_at: "2026-02-28T15:41:00Z"
 ---
 
 United Nations 

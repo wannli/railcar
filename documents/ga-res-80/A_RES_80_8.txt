@@ -5,8 +5,8 @@ title: "Building a peaceful and better world through sport and the Olympic ideal
 date: "2025-11-20"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093934/files/A_RES_80_8-EN.pdf
-extract_version: "1.0.0"
-extracted_at: "2026-02-28T15:16:06Z"
+extract_version: "1.1.0"
+extracted_at: "2026-02-28T15:41:00Z"
 ---
 
 United Nations 

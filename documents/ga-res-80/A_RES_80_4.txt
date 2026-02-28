@@ -5,8 +5,8 @@ title: "Necessity of ending the economic, commercial and financial embargo impos
 date: "2025-10-31"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4092314/files/A_RES_80_4-EN.pdf
-extract_version: "1.0.0"
-extracted_at: "2026-02-28T15:15:46Z"
+extract_version: "1.1.0"
+extracted_at: "2026-02-28T15:41:00Z"
 ---
 
 United Nations 
