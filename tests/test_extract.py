@@ -11,6 +11,7 @@ from extract import (
     _detect_header_lines,
     _join_paragraph_numbers,
     _join_paragraphs,
+    clean_text,
 )
 
 
@@ -124,6 +125,18 @@ def test_preserves_content_lines():
     result = _clean_text(text, set())
     assert "General Assembly" in result
     assert "Recalling" in result
+
+
+def test_clean_text_reapplies_cleaning():
+    """clean_text should apply cleanup logic to already-extracted text."""
+    # Simulate body text that still has artifacts (e.g. from a v1.0 extraction
+    # that didn't strip distribution codes or join paragraph numbers)
+    body = "Some text\n25-15106 (E)\n\n1.\nDecides that something\n\n3/24\n\nMore text"
+    result = clean_text(body)
+    assert "25-15106" not in result
+    assert "3/24" not in result
+    assert "1. Decides" in result
+    assert "More text" in result
 
 
 def test_full_cleaning_pipeline():

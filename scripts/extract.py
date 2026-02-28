@@ -34,6 +34,16 @@ def get_version() -> str:
     return EXTRACT_VERSION
 
 
+def clean_text(text: str) -> str:
+    """Re-apply the cleaning pipeline to already-extracted text.
+
+    Use this when the extraction logic has changed and existing documents
+    need to be reprocessed without re-downloading their PDFs.  Header
+    detection is skipped because page boundaries are no longer available.
+    """
+    return _clean_text(text, header_lines=set())
+
+
 def extract_text(pdf_bytes: bytes) -> str:
     """Extract text from PDF bytes using PyMuPDF.
 
