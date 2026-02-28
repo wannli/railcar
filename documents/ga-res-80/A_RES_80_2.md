@@ -5,8 +5,8 @@ title: "Scale of assessments for the apportionment of the expenses of the United
 date: "2025-10-15"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4091275/files/A_RES_80_2-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/2
@@ -34,14 +34,13 @@ Reaffirming the obligation of Member States under Article 17 of the Charter of t
 3. Requests the Secretary-General to continue to bring to the attention of Member States the deadline specified in resolution 54/237 C, including through an early announcement in the Journal of the United Nations and through direct communication;
 
 4. Urges all Member States requesting exemption under Article 19 of the Charter to submit as much information as possible in support of their requests and to consider submitting such information in advance of the deadline specified in resolution 54/237 C so as to enable the collation of any additional detailed information that may be necessary;
----
-
-1  Official Records of the General Assembly, Eightieth Session, Supplement No. 11 (A/80/11).
-
-A/RES/80/2 Scale of assessments for the apportionment of the expenses of the United Nations: requests under Article 19 of the Charter
 
 5. Agrees that the failure of Bolivia (Plurinational State of) and Sao Tome and Principe to pay the full minimum amount necessary to avoid the application of Article 19 of the Charter was due to conditions beyond their control;
 
 6. Decides that Bolivia (Plurinational State of) and Sao Tome and Principe shall be permitted to vote in the General Assembly until the end of its eightieth session.
 
 18th plenary meeting 14 October 2025
+
+---
+
+1  Official Records of the General Assembly, Eightieth Session, Supplement No. 11 (A/80/11).

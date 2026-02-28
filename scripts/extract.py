@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 import fitz  # PyMuPDF
 
-EXTRACT_VERSION = "1.1.0"
+EXTRACT_VERSION = "1.2.0"
 
 # Matches UN distribution codes like "25-15106 (E)", "25-15106", or "*2515106*"
 _RE_DIST_CODE = re.compile(r"^\d{2}-\d{5}(\s*\([A-Z]\))?\s*$")
@@ -29,6 +29,12 @@ _RE_PARA_NUM = re.compile(r"^(\d+)\.\s*$")
 # Matches standalone sub-paragraph labels like "(a)" or "(iv)" on their own line
 _RE_SUBPARA = re.compile(r"^(\([a-z]+\)|\([ivxlc]+\))\s*$")
 
+# Matches a footnote definition line: starts with digit(s), space, then text
+_RE_FOOTNOTE_DEF = re.compile(r"^\d+\s+\S")
+
+# Matches a UN document symbol in a page header line
+_RE_PAGE_HEADER = re.compile(r"[A-Z]/RES/\d+/\d+")
+
 
 def get_version() -> str:
     return EXTRACT_VERSION
@@ -40,15 +46,21 @@ def clean_text(text: str) -> str:
     Use this when the extraction logic has changed and existing documents
     need to be reprocessed without re-downloading their PDFs.  Header
     detection is skipped because page boundaries are no longer available.
+    Inline footnote blocks are relocated to the end of the document.
     """
-    return _clean_text(text, header_lines=set())
+    body, footnotes = _relocate_inline_footnotes(text)
+    cleaned = _clean_text(body, header_lines=set())
+    if footnotes:
+        return cleaned + "\n\n---\n\n" + footnotes
+    return cleaned
 
 
 def extract_text(pdf_bytes: bytes) -> str:
     """Extract text from PDF bytes using PyMuPDF.
 
     Returns cleaned plaintext with headers/footers removed, paragraphs joined,
-    and common PDF artifacts cleaned up.
+    and common PDF artifacts cleaned up.  Footnotes from each page are
+    collected and placed at the end of the document.
     """
     doc = fitz.open(stream=pdf_bytes, filetype="pdf")
     pages = []
@@ -58,8 +70,24 @@ def extract_text(pdf_bytes: bytes) -> str:
             pages.append(text.strip())
     doc.close()
 
-    raw = "\n\n".join(pages)
-    return _clean_text(raw, _detect_header_lines(pages))
+    # Separate footnotes from body text on each page
+    body_parts = []
+    all_footnotes = []
+    for page_text in pages:
+        body, footnotes = _split_page_footnotes(page_text)
+        body_parts.append(body)
+        if footnotes:
+            all_footnotes.append(footnotes)
+
+    raw = "\n\n".join(body_parts)
+    text = _clean_text(raw, _detect_header_lines(body_parts))
+
+    # Append collected footnotes at the end
+    if all_footnotes:
+        footnote_text = "\n\n".join(all_footnotes)
+        text = text + "\n\n---\n\n" + footnote_text
+
+    return text.strip()
 
 
 def _detect_header_lines(pages: list[str]) -> set[str]:
@@ -81,6 +109,97 @@ def _detect_header_lines(pages: list[str]) -> set[str]:
                 line_page_count[stripped] = line_page_count.get(stripped, 0) + 1
 
     return {line for line, count in line_page_count.items() if count > 1}
+
+
+def _split_page_footnotes(page_text: str) -> tuple[str, str]:
+    """Split a single page's text into (body, footnotes) at the footnote separator.
+
+    Returns (body_text, footnotes_text).  footnotes_text is empty if no
+    separator was found on the page.
+    """
+    lines = page_text.split("\n")
+    for i, line in enumerate(lines):
+        if _RE_FOOTNOTE_SEP.match(line.strip()):
+            body = "\n".join(lines[:i]).strip()
+            footnotes = "\n".join(lines[i + 1 :]).strip()
+            return body, footnotes
+    return page_text, ""
+
+
+def _relocate_inline_footnotes(text: str) -> tuple[str, str]:
+    """Extract inline footnote blocks from already-processed text.
+
+    Scans for ``---`` separators (standalone or joined to the end of a line)
+    followed by footnote definitions.  Returns ``(body, footnotes)`` where
+    *body* has the footnote blocks removed and *footnotes* is the collected
+    footnote text ready to be appended at the end.
+    """
+    lines = text.split("\n")
+    body_lines: list[str] = []
+    footnote_defs: list[str] = []
+    i = 0
+
+    while i < len(lines):
+        stripped = lines[i].strip()
+
+        is_standalone_sep = stripped == "---"
+        is_joined_sep = not is_standalone_sep and stripped.endswith(" ---")
+
+        if is_standalone_sep or is_joined_sep:
+            # Look ahead past blank lines for footnote definitions
+            j = i + 1
+            while j < len(lines) and not lines[j].strip():
+                j += 1
+
+            if j < len(lines) and _RE_FOOTNOTE_DEF.match(lines[j].strip()):
+                # Found a footnote block
+                if is_joined_sep:
+                    body_lines.append(stripped[:-4].rstrip())
+
+                # Collect lines until a page header or end of text
+                fn_block: list[str] = []
+                while j < len(lines):
+                    fn_line = lines[j].strip()
+                    if not fn_line:
+                        j += 1
+                        continue
+                    if (
+                        _RE_PAGE_HEADER.search(fn_line)
+                        and not _RE_FOOTNOTE_DEF.match(fn_line)
+                    ):
+                        break
+                    fn_block.append(fn_line)
+                    j += 1
+
+                # Parse block into individual footnote definitions
+                for fn_line in fn_block:
+                    if _RE_FOOTNOTE_DEF.match(fn_line):
+                        footnote_defs.append(fn_line)
+                    elif footnote_defs:
+                        # Continuation of previous multi-line footnote
+                        footnote_defs[-1] += " " + fn_line
+
+                # Skip page header line if present
+                if j < len(lines) and _RE_PAGE_HEADER.search(
+                    lines[j].strip()
+                ):
+                    j += 1
+
+                # For joined separators, skip blank lines so the
+                # continuation text is adjacent for paragraph joining.
+                if is_joined_sep:
+                    while j < len(lines) and not lines[j].strip():
+                        j += 1
+
+                i = j
+                continue
+
+        body_lines.append(lines[i])
+        i += 1
+
+    body = "\n".join(body_lines)
+    footnotes = "\n\n".join(footnote_defs)
+    return body, footnotes
 
 
 def _clean_text(text: str, header_lines: set[str]) -> str:
@@ -186,6 +305,9 @@ def _join_paragraphs(text: str) -> str:
 
 def _continues_previous(prev: str, curr: str) -> bool:
     """Determine whether curr is a continuation of prev."""
+    # Never join across footnote separators
+    if prev == "---" or curr == "---":
+        return False
     # Current line starts with lowercase -> continuation
     if curr[0].islower():
         return True

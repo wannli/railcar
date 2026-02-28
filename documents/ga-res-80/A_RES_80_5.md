@@ -5,8 +5,8 @@ title: "Doha Political Declaration of the \"World Social Summit\" under the titl
 date: "2025-11-04"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093123/files/A_RES_80_5-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/5
@@ -31,15 +31,7 @@ Annex
 
 Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development”
 
-1. We, Heads of State and Government and high representatives, have gathered in Doha from 4 to 6 November 2025 at the Second World Summit for Social Development to build a more just, inclusive, equitable and sustainable world, by addressing gaps, assessing progress and recommitting to the Copenhagen Declaration on Social Development and Programme of Action of the World Summit for Social Development 1 and their implementation, and give momentum towards the implementation of the 2030 Agenda for Sustainable Development.2 2. We acknowledge the urgent need to address profound social challenges, especially poverty, unemployment and social exclusion, that affect every country. It is our task to address both their underlying and structural causes and their distressing ---
-
-1 Report of the World Summit for Social Development, Copenhagen, 6–12 March 1995 (United Nations publication, Sales No. E.96.IV.8), chap. I, resolution 1, annexes I and II.
-
-2 Resolution 70/1.
-
-A/RES/80/5 Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development”
-
-consequences in accordance with international law, including human rights obligations, in order to reduce uncertainty, inequality and insecurity.
+1. We, Heads of State and Government and high representatives, have gathered in Doha from 4 to 6 November 2025 at the Second World Summit for Social Development to build a more just, inclusive, equitable and sustainable world, by addressing gaps, assessing progress and recommitting to the Copenhagen Declaration on Social Development and Programme of Action of the World Summit for Social Development 1 and their implementation, and give momentum towards the implementation of the 2030 Agenda for Sustainable Development.2 2. We acknowledge the urgent need to address profound social challenges, especially poverty, unemployment and social exclusion, that affect every country. It is our task to address both their underlying and structural causes and their distressing consequences in accordance with international law, including human rights obligations, in order to reduce uncertainty, inequality and insecurity.
 3. We recognize that the three core themes of social development, namely, poverty eradication, promotion of full and productive employment and decent work for all and social integration, are interrelated and mutually reinforcing, and that an enabling environment therefore needs to be created so that all three objectives can be pursued simultaneously.
 4. We share the conviction that social development and social justice are indispensable for the achievement and maintenance of peace and security within and among our nations. In turn, social development and social justice cannot be attained in the absence of peace and security or in the absence of respect for all human rights and fundamental freedoms.
 5. We meet 30 years after the first World Summit for Social Development and days after the commemoration of the eightieth anniversary of the United Nations, with a determination to promote social development and social justice anchored in a strengthened and effective multilateral system, and we reaffirm and remain guided by the purposes and principles of the Charter of the United Nations and international law.
@@ -49,19 +41,6 @@ consequences in accordance with international law, including human rights obliga
 We are committed to its full implementation, which is critical for the realization of the Sustainable Development Goals and their targets.
 10. We welcome the outcome document of the Fourth International Conference on Financing for Development, the Sevilla Commitment, 7  which renews the global financing for development framework, building on the Addis Ababa Action Agenda, and call for its timely and effective implementation.
 11. We reaffirm that the pursuit and enjoyment of human rights and fundamental freedoms for all, encompassing civil, political, economic, social and cultural rights, which includes the right to development, must be respected, protected and promoted, without distinction or discrimination of any kind.
----
-
-3 Resolution S-24/2, annex.
-
-4 Resolution 74/4, annex, and resolution 78/1, annex.
-
-5 Resolution 79/1.
-
-6 Resolution 69/313, annex.
-
-7 Resolution 79/323, annex.
-
-Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development” A/RES/80/5
 
 12. We reaffirm that the eradication of poverty in all its forms and dimensions, including extreme poverty, remains the greatest global challenge and an indispensable requirement for sustainable development.
 13. We stress the need to take urgent and ambitious climate action in the implementation of the United Nations Framework Convention on Climate Change 8 and the Paris Agreement 9  in relation to climate mitigation, adaptation and the provision of the means of implementation, especially finance to developing countries.
@@ -73,19 +52,7 @@ Doha Political Declaration of the “World Social Summit” under the title “t
 
 (a) Although great strides have been made in reducing poverty since 1995, in recent years progress has slowed, and millions of people still live in extreme poverty and over 1 billion people endure poverty in different forms and dimensions. Children, women, persons with disabilities, people living in rural areas and those in vulnerable situations experience higher poverty rates than the rest of the population. Hunger, food insecurity and malnutrition are still a reality, with global undernourishment rising in recent years. While access to education has expanded, still too many children are out of school;
 
-(b) In addition, while millions have been lifted out of poverty, billions of people live close to the poverty line and face a constant risk of falling into extreme poverty. Despite significant global progress in gradually expanding social protection ---
-
-8 United Nations, Treaty Series, vol. 1771, No. 30822.
-
-9 Adopted under the United Nations Framework Convention on Climate Change. See FCCC/CP/2015/10/Add.1, decision 1/CP.21, annex.
-
-10 Report of the United Nations Conference on Environment and Development, Rio de Janeiro,
-3–14 June 1992, vol. I, Resolutions Adopted by the Conference (United Nations publication,
-Sales No. E.93.I.8 and corrigendum), resolution 1, annex I.
-
-A/RES/80/5 Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development”
-
-coverage, including social protection floors, almost 4 billion people still lack access to any form of social protection, including nearly 2 billion children;
+(b) In addition, while millions have been lifted out of poverty, billions of people live close to the poverty line and face a constant risk of falling into extreme poverty. Despite significant global progress in gradually expanding social protection coverage, including social protection floors, almost 4 billion people still lack access to any form of social protection, including nearly 2 billion children;
 
 (c) Millions of workers continue to live in poverty, earning wages and incomes that are not sufficient for an adequate standard of living or to sustain their families. Informal employment remains pervasive, with billions of people making their living in the informal economy. Women and young people are disproportionately engaged in informal and precarious employment. Furthermore, progress towards ending child labour is too slow;
 
@@ -113,17 +80,7 @@ They must be fit for the present and the future – effective and capable, just,
 24. We will explore bold and effective social policies that are woven into a whole- of-government, whole-of-society, people-centred and integrated approaches aimed at achieving social development for all, including through enhancing social policy coherence, building effective, accountable, transparent and inclusive institutions at all levels, achieving social justice for all, upholding democracy, the rule of law, good governance and access to justice, combating all forms of corruption and reinforcing national coordination, as well as multi-stakeholder engagement and integrated responses to social development challenges, and avoiding policy silos across sectors.
 25. We recognize the contributions of multi-stakeholder engagement to social development. We will continue to collaborate meaningfully with all relevant stakeholders, including civil society, social partners and the private sector, and encourage multi-stakeholder collaboration and partnerships.
 26. On the basis of our common pursuit of social development, which is aimed at social justice, solidarity, harmony and equality, within and among countries, guided by the purposes and principles of the Charter of the United Nations and international law, as well as policy objectives, development priorities and religious and cultural diversity, and full respect for all human rights and fundamental freedoms, we reaffirm our global drive for social progress and development.
-27. We strive for a future that is inclusive, resilient, sustainable and just. We envisage a world free of poverty, hunger, unemployment, preventable diseases, racism, discrimination and insecurity and a world of equality, equity, shared ---
-
-11 Resolution 76/258, annex.
-
-12 Resolution 79/233, annex; see also resolution 79/279.
-
-13 Resolution 78/317, annex.
-
-A/RES/80/5 Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development”
-
-prosperity and peace, where the dignity of all people is respected, and where no one is left behind.
+27. We strive for a future that is inclusive, resilient, sustainable and just. We envisage a world free of poverty, hunger, unemployment, preventable diseases, racism, discrimination and insecurity and a world of equality, equity, shared prosperity and peace, where the dignity of all people is respected, and where no one is left behind.
 
 A call to action
 
@@ -226,13 +183,7 @@ principles of non‑discrimination, equal opportunity, solidarity, tolerance and
 
 (f) Ensuring the full and effective inclusion and participation of persons with disabilities, in accordance with the Convention on the Rights of Persons with Disabilities, 14  including through removing barriers and implementing inclusive, accessible and rights-based policies and services. These efforts must be carried out in collaboration with persons with disabilities and their representative organizations, in accordance with the general principles of the Convention on the Rights of Persons with Disabilities, to ensure their equal participation in all aspects of life and development;
 
-(g) Ensuring that social development policies and programmes integrate persons with disabilities as both development agents and beneficiaries in all aspects of development and equal access for persons with disabilities to social protection floors and safety nets, address additional disability-related costs in the design of social protection schemes and enhance responsive support and accessible services for ---
-
-14 United Nations, Treaty Series, vol. 2515, No. 44910.
-
-Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development” A/RES/80/5
-
-persons with disabilities, which are critical to promoting inclusive development for all;
+(g) Ensuring that social development policies and programmes integrate persons with disabilities as both development agents and beneficiaries in all aspects of development and equal access for persons with disabilities to social protection floors and safety nets, address additional disability-related costs in the design of social protection schemes and enhance responsive support and accessible services for persons with disabilities, which are critical to promoting inclusive development for all;
 
 (h) Creating an enabling environment for the equal, full, effective and meaningful participation of older persons in political, social, economic and cultural life, including by responding to population ageing and combating all forms of discrimination and inequality experienced by older persons;
 
@@ -322,12 +273,7 @@ A/RES/80/5 Doha Political Declaration of the “World Social Summit” under the
 
 (a) Strengthening adaptive social protection systems, including by enhancing social safety nets and protection floors, improving access to essential services and developing targeted support programmes to safeguard those disproportionately affected by the adverse impact of climate change and disasters caused by human- made or natural hazards;
 
-(b) Promoting a risk-informed approach to social development that integrates accessible disaster risk reduction measures into policies, programmes and investments at all levels, and advancing inclusive early warning systems, early and anticipatory approaches, and preparedness initiatives by developing comprehensive risk management plans and investing in inclusive, sustainable and resilient infrastructure according to the Sendai Framework for Disaster Risk Reduction 2015– 2030;15 ---
-
-15 Resolution 69/283, annex II.
-
-Doha Political Declaration of the “World Social Summit” under the title “the Second World Summit for Social Development” A/RES/80/5
-
+(b) Promoting a risk-informed approach to social development that integrates accessible disaster risk reduction measures into policies, programmes and investments at all levels, and advancing inclusive early warning systems, early and anticipatory approaches, and preparedness initiatives by developing comprehensive risk management plans and investing in inclusive, sustainable and resilient infrastructure according to the Sendai Framework for Disaster Risk Reduction 2015– 2030;15
 (c) Ensuring that education and health systems and new and existing critical infrastructure, including water and sanitation, transportation and telecommunications infrastructure, educational facilities, hospitals and other health facilities, are resilient and adaptable to disasters.
 38. We reaffirm the need to achieve gender equality and the empowerment of all women and girls and to ensure the full and equal enjoyment of all human rights and fundamental freedoms by all women and girls throughout their life course, and that all legal, social and economic barriers to their empowerment are removed. We commit to:
 
@@ -414,3 +360,35 @@ Development, the outcome of the twenty-fourth special session of the General Ass
 
 (i) Support developing countries, particularly African countries, least developed countries, small island developing States and landlocked developing countries, in, inter alia, strengthening the capacity of national statistical offices and data systems to ensure access to high-quality, timely, reliable and disaggregated social development data.
 44. We commit with united efforts, political will and firm actions to advance concrete, integrated and targeted policies and actions to implement the Doha Political Declaration and achieve social development for all in line with the Copenhagen Declaration and Programme of Action.
+
+---
+
+1 Report of the World Summit for Social Development, Copenhagen, 6–12 March 1995 (United Nations publication, Sales No. E.96.IV.8), chap. I, resolution 1, annexes I and II.
+
+2 Resolution 70/1.
+
+3 Resolution S-24/2, annex.
+
+4 Resolution 74/4, annex, and resolution 78/1, annex.
+
+5 Resolution 79/1.
+
+6 Resolution 69/313, annex.
+
+7 Resolution 79/323, annex.
+
+8 United Nations, Treaty Series, vol. 1771, No. 30822.
+
+9 Adopted under the United Nations Framework Convention on Climate Change. See FCCC/CP/2015/10/Add.1, decision 1/CP.21, annex.
+
+10 Report of the United Nations Conference on Environment and Development, Rio de Janeiro, 3–14 June 1992, vol. I, Resolutions Adopted by the Conference (United Nations publication, Sales No. E.93.I.8 and corrigendum), resolution 1, annex I.
+
+11 Resolution 76/258, annex.
+
+12 Resolution 79/233, annex; see also resolution 79/279.
+
+13 Resolution 78/317, annex.
+
+14 United Nations, Treaty Series, vol. 2515, No. 44910.
+
+15 Resolution 69/283, annex II.

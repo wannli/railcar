@@ -11,6 +11,8 @@ from extract import (
     _detect_header_lines,
     _join_paragraph_numbers,
     _join_paragraphs,
+    _relocate_inline_footnotes,
+    _split_page_footnotes,
     clean_text,
 )
 
@@ -223,3 +225,152 @@ def test_full_cleaning_pipeline():
     # Actual content preserved
     assert "General Assembly" in result
     assert "3rd plenary meeting" in result
+
+
+def test_split_page_footnotes_with_separator():
+    page = (
+        "Body text here\n"
+        "More body text\n"
+        "_______________\n"
+        "\n"
+        "1 See resolution 169 (II)."
+    )
+    body, footnotes = _split_page_footnotes(page)
+    assert "Body text here" in body
+    assert "More body text" in body
+    assert "___" not in body
+    assert "1 See resolution 169 (II)." in footnotes
+
+
+def test_split_page_footnotes_without_separator():
+    page = "Body text only\nNo footnotes here"
+    body, footnotes = _split_page_footnotes(page)
+    assert body == page
+    assert footnotes == ""
+
+
+def test_relocate_inline_footnotes_standalone():
+    """Standalone --- separator followed by footnotes and a page header."""
+    text = (
+        "paragraph ending with semicolon;\n"
+        "---\n"
+        "\n"
+        "1 United Nations, Treaty Series, vol. 2187, No. 38544.\n"
+        "\n"
+        "A/RES/80/6 Report of the International Criminal Court\n"
+        "\n"
+        "2. Next operative paragraph"
+    )
+    body, footnotes = _relocate_inline_footnotes(text)
+    assert "---" not in body
+    assert "2. Next operative paragraph" in body
+    assert "paragraph ending with semicolon;" in body
+    assert "1 United Nations, Treaty Series, vol. 2187, No. 38544." in footnotes
+    assert "A/RES/80/6" not in body
+
+
+def test_relocate_inline_footnotes_joined():
+    """Text ending with ' ---' (joined separator) followed by footnotes."""
+    text = (
+        "and other international and ---\n"
+        "\n"
+        "1 United Nations, Treaty Series, vol. 2187, No. 38544.\n"
+        "\n"
+        "A/RES/80/6 Report of the International Criminal Court\n"
+        "\n"
+        "regional organizations remain essential"
+    )
+    body, footnotes = _relocate_inline_footnotes(text)
+    assert "---" not in body
+    assert "and other international and" in body
+    assert "regional organizations remain essential" in body
+    assert "1 United Nations, Treaty Series, vol. 2187, No. 38544." in footnotes
+
+
+def test_relocate_inline_footnotes_multiple_blocks():
+    """Multiple footnote blocks scattered through the text."""
+    text = (
+        "First paragraph;\n"
+        "---\n"
+        "\n"
+        "1 First footnote.\n"
+        "\n"
+        "A/RES/80/1 Title\n"
+        "\n"
+        "Second paragraph;\n"
+        "---\n"
+        "\n"
+        "2 Second footnote.\n"
+        "\n"
+        "3 Third footnote.\n"
+        "\n"
+        "A/RES/80/1 Title\n"
+        "\n"
+        "Third paragraph."
+    )
+    body, footnotes = _relocate_inline_footnotes(text)
+    assert "---" not in body
+    assert "First paragraph;" in body
+    assert "Second paragraph;" in body
+    assert "Third paragraph." in body
+    assert "1 First footnote." in footnotes
+    assert "2 Second footnote." in footnotes
+    assert "3 Third footnote." in footnotes
+
+
+def test_relocate_inline_footnotes_multiline():
+    """Multi-line footnote where the continuation doesn't start with a digit."""
+    text = (
+        "Some text.\n"
+        "---\n"
+        "\n"
+        "2 See International Atomic Energy Agency, Resolutions Adopted\n"
+        "(GC(69)/RES/DEC(2025)) for the full texts.\n"
+        "\n"
+        "3 See resolution 123."
+    )
+    body, footnotes = _relocate_inline_footnotes(text)
+    assert "Some text." in body
+    assert "---" not in body
+    assert "2 See International Atomic Energy Agency, Resolutions Adopted (GC(69)/RES/DEC(2025)) for the full texts." in footnotes
+    assert "3 See resolution 123." in footnotes
+
+
+def test_clean_text_relocates_footnotes():
+    """clean_text should move inline footnotes to end of document."""
+    text = (
+        "The General Assembly,\n"
+        "\n"
+        "Recalling the Rome Statute 1 of the Court,\n"
+        "\n"
+        "cooperation and other international and ---\n"
+        "\n"
+        "1 United Nations, Treaty Series, vol. 2187, No. 38544.\n"
+        "\n"
+        "A/RES/80/6 Report of the International Criminal Court\n"
+        "\n"
+        "regional organizations remain essential,\n"
+        "\n"
+        "1. Welcomes the report."
+    )
+    result = clean_text(text)
+    # Footnotes should be at the end, after ---
+    parts = result.split("---")
+    assert len(parts) == 2
+    body_part = parts[0]
+    fn_part = parts[1]
+    # Body should be continuous without inline footnotes
+    assert "international and" in body_part
+    assert "regional organizations remain essential" in body_part
+    # Footnote should be at the end
+    assert "1 United Nations, Treaty Series" in fn_part
+    # Page header should be removed
+    assert "A/RES/80/6 Report of the International Criminal Court" not in result
+
+
+def test_does_not_join_separator_with_text():
+    """The --- footnote separator should never be joined to adjacent lines."""
+    text = "Some text without punctuation end\n---\n1 Footnote text."
+    result = _clean_text(text, set())
+    assert "end ---" not in result
+    assert "---" in result

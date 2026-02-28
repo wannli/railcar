@@ -5,8 +5,8 @@ title: "Report of the International Criminal Court :"
 date: "2025-11-12"
 language: EN
 source_pdf: https://digitallibrary.un.org/record/4093218/files/A_RES_80_6-EN.pdf
-extract_version: "1.1.0"
-extracted_at: "2026-02-28T15:56:18Z"
+extract_version: "1.2.0"
+extracted_at: "2026-02-28T18:12:03Z"
 ---
 
 United Nations A/RES/80/6
@@ -37,13 +37,7 @@ Convinced that ending impunity is essential for coming to terms with any past cr
 
 Acknowledging the fact that the International Criminal Court has achieved considerable progress in its investigations and judicial proceedings in various situations and cases which were referred to it by States Parties to the Rome Statute and by the Security Council, and which the Prosecutor of the Court has initiated proprio motu, in accordance with the Rome Statute,
 
-Recalling that effective and comprehensive cooperation and assistance in all aspects of its mandate by States, the United Nations and other international and ---
-
-1 United Nations, Treaty Series, vol. 2187, No. 38544.
-
-A/RES/80/6 Report of the International Criminal Court
-
-regional organizations remain essential for the International Criminal Court to carry out its activities,
+Recalling that effective and comprehensive cooperation and assistance in all aspects of its mandate by States, the United Nations and other international and regional organizations remain essential for the International Criminal Court to carry out its activities,
 
 Expressing its appreciation to the Secretary-General for providing effective and efficient assistance to the International Criminal Court in accordance with the Relationship Agreement between the United Nations and the International Criminal Court,2
 
@@ -66,17 +60,6 @@ Stressing the importance that the Rome Statute accords to the rights and needs o
 4. Notes the recent ratifications and acceptances of the amendments adopted at the Review Conference of the Rome Statute of the International Criminal Court, held in Kampala from 31 May to 11 June 2010;
 
 5. Underlines, bearing in mind that in accordance with the Rome Statute the International Criminal Court is complementary to national criminal jurisdictions, that States need to adopt appropriate measures within their national legal systems for those crimes for which they are required under international law to exercise their responsibility to investigate and prosecute;
----
-
-2 A/58/874 and A/58/874/Add.1.
-
-3 Articles 10 and 13 of the Relationship Agreement.
-
-4 A/80/342.
-
-5 United Nations, Treaty Series, vol. 2271, No. 40446.
-
-Report of the International Criminal Court A/RES/80/6
 
 6. Encourages further efforts by the United Nations, other international and regional organizations and States, as well as civil society, to appropriately assist States, upon their request, in strengthening their domestic capacity to investigate and prosecute crimes, and in this regard underlines the importance of national ownership;
 
@@ -94,13 +77,7 @@ Report of the International Criminal Court A/RES/80/6
 
 13. Recalls article 3 of the Relationship Agreement, according to which, with a view to facilitating the effective discharge of their respective responsibilities, the United Nations and the International Criminal Court shall cooperate closely, whenever appropriate, with each other and consult each other on matters of mutual interest pursuant to the provisions of the Relationship Agreement and in conformity with the respective provisions of the Charter and the Rome Statute, and shall respect each other’s status and mandate,6 and requests the Secretary-General to continue to include information relevant to the implementation of article 3 of the Relationship Agreement in a report to be submitted to the General Assembly at its eighty-first session;
 
-14. Recalls the guidance issued by the Secretary-General on contacts with persons who are the subject of arrest warrants or summonses issued by the ---
-
-6 Article 2, paragraph 3, of the Relationship Agreement.
-
-A/RES/80/6 Report of the International Criminal Court
-
-International Criminal Court, 7  and in this regard takes note of the information included in the report of the Secretary-General on the implementation of article 3 of the Relationship Agreement;8
+14. Recalls the guidance issued by the Secretary-General on contacts with persons who are the subject of arrest warrants or summonses issued by the International Criminal Court, 7  and in this regard takes note of the information included in the report of the Secretary-General on the implementation of article 3 of the Relationship Agreement;8
 
 15. Recalls the Relationship Agreement, and notes that expenses related to investigations or prosecutions incurred by the International Criminal Court in connection with situations referred by the Security Council or otherwise continue to be borne exclusively by States Parties to the Rome Statute;
 
@@ -121,15 +98,6 @@ International Criminal Court, 7  and in this regard takes note of the informatio
 23. Expresses its appreciation for the work undertaken by the International Criminal Court liaison office to United Nations Headquarters, and encourages the Secretary-General to continue to work closely with that office;
 
 24. Encourages States to contribute to the trust fund established for the benefit of victims of crimes within the jurisdiction of the International Criminal Court and the families of such victims, and acknowledges with appreciation contributions made to that trust fund thus far;
----
-
-7 A/67/828-S/2013/210, annex.
-
-8 A/80/344.
-
-9 S/PRST/2013/2; see Resolutions and Decisions of the Security Council, 1 August 2012–31 July 2013 (S/INF/68).
-
-Report of the International Criminal Court A/RES/80/6
 
 25. Recalls that, at the Review Conference of the Rome Statute, which was convened and opened by the Secretary-General, States Parties reaffirmed their commitment to the Rome Statute and its full implementation, as well as its universality and integrity, and that the Review Conference undertook a stocktaking exercise of international criminal justice, considering the impact of the Rome Statute on victims and affected communities, peace and justice, complementarity and cooperation, called for the strengthening of the enforcement of sentences, adopted amendments to the Rome Statute to expand the jurisdiction of the International Criminal Court to cover three additional war crimes when committed in armed conflicts not of an international character, and adopted amendments to the Rome Statute to define the crime of aggression and to establish conditions under which the Court could exercise jurisdiction with respect to that crime;
 
@@ -150,5 +118,23 @@ Report of the International Criminal Court A/RES/80/6
 35th plenary meeting 11 November 2025
 
 ---
+
+1 United Nations, Treaty Series, vol. 2187, No. 38544.
+
+2 A/58/874 and A/58/874/Add.1.
+
+3 Articles 10 and 13 of the Relationship Agreement.
+
+4 A/80/342.
+
+5 United Nations, Treaty Series, vol. 2271, No. 40446.
+
+6 Article 2, paragraph 3, of the Relationship Agreement.
+
+7 A/67/828-S/2013/210, annex.
+
+8 A/80/344.
+
+9 S/PRST/2013/2; see Resolutions and Decisions of the Security Council, 1 August 2012–31 July 2013 (S/INF/68).
 
 10 Official Records of the General Assembly, Eightieth Session, Supplement No. 1 (A/80/1).
