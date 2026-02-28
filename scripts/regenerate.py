@@ -1,7 +1,7 @@
 """
 Re-generate document files whose extract_version is older than the current version.
 
-Reads each existing .txt file, parses the YAML front matter and body text,
+Reads each existing .md file, parses the YAML front matter and body text,
 re-applies the current cleaning logic to the body, then re-formats the output
 using the current schema version. No PDF re-download is needed.
 
@@ -54,12 +54,12 @@ def regenerate_all() -> int:
         return 0
 
     regenerated = 0
-    for txt_file in sorted(DOCS_DIR.rglob("*.txt")):
+    for md_file in sorted(DOCS_DIR.rglob("*.md")):
         try:
-            if regenerate_file(txt_file):
+            if regenerate_file(md_file):
                 regenerated += 1
         except Exception as e:
-            log.error("Failed to regenerate %s: %s", txt_file, e)
+            log.error("Failed to regenerate %s: %s", md_file, e)
 
     if regenerated:
         log.info("Regenerated %d file(s) to extract version %s", regenerated, EXTRACT_VERSION)

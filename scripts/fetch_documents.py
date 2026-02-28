@@ -244,7 +244,7 @@ def process_pattern(pattern_cfg: dict, state: dict, settings: dict, max_docs: in
         log.info("Processing %s (X=%d)", symbol, x)
 
         # Check if output already exists
-        out_file = out_dir / f"{sanitize_symbol(symbol)}.txt"
+        out_file = out_dir / f"{sanitize_symbol(symbol)}.md"
         if out_file.exists():
             log.info("Already exists: %s, skipping", out_file.name)
             pat_state["last_fetched"] = x

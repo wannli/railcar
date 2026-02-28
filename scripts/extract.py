@@ -217,7 +217,7 @@ def format_output(text: str, metadata: dict) -> str:
 
 
 def parse_document(content: str) -> tuple[dict, str]:
-    """Parse a txt file with YAML front matter into (metadata_dict, body_text).
+    """Parse a markdown file with YAML front matter into (metadata_dict, body_text).
 
     Expects the file to start with '---' delimiters around YAML front matter,
     followed by the extracted text body.
